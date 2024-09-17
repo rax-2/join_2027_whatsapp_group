@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join YantraYodha 2027 Group</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <style>
+        body{
+            background-color: #25D366;
+            padding: 2%;
+        }
+        .main_co{
+            height: 100px;
+            width: 100px;
+            background-color: #075E54;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        const validValues = ['r012817temp',
+            'r706611temp',
+            'r899222temp',
+            'r414122temp',
+            'r459405temp',
+            'r291529temp',
+            'r391112temp',
+        'pinaka']; // Replace with your actual values
+        const redirectLink = 'https://chat.whatsapp.com/JhT7TMb0dNw6szeHpSEKz2'; // The link to redirect if the input is valid
+
+        // Function to prompt user and check input
+        function checkUserInput() {
+            // Prompt the user for input
+            const userInput = prompt("Enter Your Temporary Member ID: ");
+
+            // Check if the input matches any value in the array
+            if (validValues.includes(userInput)) {
+                // Redirect to another link if input is valid
+                window.location.href = redirectLink;
+            } else {
+                // Reload the page if input doesn't match
+                alert("Invalid input, please try again.");
+                location.reload(); // Reload the page and ask again
+            }
+        }
+
+        // Automatically prompt for input when the page loads
+        window.onload = function () {
+            checkUserInput();
+        };
+    </script>
+</body>
+
+</html>
